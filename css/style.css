@@ -1,7 +1,91 @@
 html, body {
     font-family: Helvetica;
+    font-size: 22px;
     color: seashell;
     background-color: black;
     opacity: 0.9;
     text-align: center;
+    margin: 10;
 }
+
+header {
+    height: 69px;
+    border-bottom: 1px solid seashell;
+}
+
+.logo {
+    float: left;
+    margin: 10px;
+    height: 50px;
+}
+
+.mission {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission-img {
+    width: 1200px;
+    height: 700px;
+}
+
+.mission-text {
+    position: absolute;
+    background-color: black;
+    width: 1200px;
+    
+}
+
+.mission-text h2, h4 {
+    margin: 10px auto;
+}
+
+.totm-head {
+    margin-top: 80px;
+}
+
+.totm-container {
+    display: flex;
+    width: 1000px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 50px 20px;
+    flex-flow: row wrap;
+}
+
+.totm-tea {
+    height: 200px;
+    width: 300px;
+}
+
+.totm-img {
+    height: 200px;
+    width: 300px;
+}
+
+.location-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.location-container h2 {
+    position: absolute;
+    padding-top: 50px;
+}
+
+.location-img {
+    height: 500px;
+    width: 1200px;
+}
+
+.location-box {
+    height: 300px;
+    width: 300px;
+    background-color: black;
+}
+
