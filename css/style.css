@@ -5,12 +5,42 @@ html, body {
     background-color: black;
     opacity: 0.9;
     text-align: center;
-    margin: 10;
+    margin: 0;
+    scroll-padding-top: 100px;
 }
 
 header {
     height: 69px;
+    width: 100%;
     border-bottom: 1px solid seashell;
+    background-color: black;
+    position: fixed;
+    margin: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-points {
+    margin-right: 20px;
+}
+
+.nav-points li {
+    display: inline;
+    margin-left: 20px;
+}
+
+a {
+    color: seashell;
+}
+
+a:hover {
+    color: gray;
+}
+
+a:active {
+    background-color: gray;
+    color: white;
 }
 
 .logo {
@@ -20,7 +50,6 @@ header {
 }
 
 .mission {
-    position: relative;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -67,15 +96,28 @@ header {
     width: 300px;
 }
 
+#location-nav {
+    margin: 80px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    background-image: url(../images/img-locations-background.jpg);
+    width: 1200px;
+    height: 500px;
+    padding-top: 70px;
+    gap: 15px;
+}
 .location-container {
     display: flex;
     justify-content: center;
-    margin-top: 80px;
+    align-items: center;
+    gap: 15px 40px;
 }
 
-.location-container h2 {
-    position: absolute;
-    padding-top: 50px;
+.location-head {
+    text-align: center;
+    margin: 0;
 }
 
 .location-img {
@@ -87,5 +129,24 @@ header {
     height: 300px;
     width: 300px;
     background-color: black;
+    display: flex;
+    flex-direction: column;
 }
 
+.contact {
+    display: flex;
+    margin: 0;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+}
+
+.contact h2, h5 {
+    margin: 0;
+}
+
+#copyright {
+    text-align: left;
+    margin: 20px;
+}
